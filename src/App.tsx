@@ -1,7 +1,5 @@
 import { useQuery } from "@apollo/client";
 import gql from "graphql-tag";
-import * as React from "react";
-import { client } from "./lib/apollo";
 
 const GET_LESSONS_QUERY = gql`
   query {
