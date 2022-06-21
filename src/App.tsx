@@ -3,8 +3,10 @@ import gql from "graphql-tag";
 
 const GET_LESSONS_QUERY = gql`
   query {
-    id
-    title
+    lessons {
+      id
+      title
+    }
   }
 `;
 
