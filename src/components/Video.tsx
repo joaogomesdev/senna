@@ -1,3 +1,4 @@
+import { DefaultUi, Player, Youtube } from "@vime/react";
 import {
   CaretRight,
   DiscordLogo,
@@ -5,6 +6,7 @@ import {
   Lightning,
 } from "phosphor-react";
 import React from "react";
+import "@vime/core/themes/default.css";
 
 interface Props {}
 
@@ -12,7 +14,12 @@ export const Video = ({}: Props) => {
   return (
     <div className="flex-1">
       <div className="bg-black flex justify-center">
-        <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video"></div>
+        <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
+          <Player>
+            <Youtube videoId="dQw4w9WgXcQ" />
+            <DefaultUi />
+          </Player>
+        </div>
       </div>
 
       <div className="p-8 max-w-[1100px] mx-auto">
@@ -45,7 +52,7 @@ export const Video = ({}: Props) => {
           <div className="flex flex-col gap-4">
             <a
               href=""
-              className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors"
+              className="p-4 text-sm bg-purple-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-purple-700 transition-colors"
             >
               <DiscordLogo size={24} />
               Discord Community
@@ -65,7 +72,7 @@ export const Video = ({}: Props) => {
             href=""
             className="bg-gray-700 rounded overflow-hidden  flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
           >
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-purple-700 h-full p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-6 leading-relaxed">
@@ -83,7 +90,7 @@ export const Video = ({}: Props) => {
             href=""
             className="bg-gray-700 rounded overflow-hidden  flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
           >
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-purple-700 h-full p-6 flex items-center">
               <FileArrowDown size={40} />
             </div>
             <div className="py-6 leading-relaxed">

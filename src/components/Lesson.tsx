@@ -26,13 +26,13 @@ export const Lesson = ({ title, slug, availableAt, type }: Props) => {
               Available!
             </span>
           ) : (
-            <span className="text-sm text-orange-500 font-medium flex items-center gap-2">
+            <span className="text-sm text-purple-500 font-medium flex items-center gap-2">
               <Lock size={20} />
               Soon...
             </span>
           )}
 
-          <span className="text-xs rounded px-2 py-[0.125rem] text-white border border-green-300 font-bold">
+          <span className="text-xs rounded px-2 py-[0.125rem] text-white border border-purple-600 font-bold">
             {type === "live" ? "Live" : "Class"}
           </span>
         </header>
